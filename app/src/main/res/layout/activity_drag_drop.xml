@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@drawable/image_8"
+    android:background="@color/colorBackgroundPrimary"
     tools:context="com.vladan.dragdropimages.DragDropActivity">
 
 
@@ -25,7 +25,7 @@
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:src="@drawable/trash"
-        android:background="@drawable/image_1"
+        android:background="@color/colorBackgroundTrash"
         android:layout_alignBottom="@id/gridImage"
         android:contentDescription="@string/desc"
 

@@ -110,10 +110,10 @@ public class DragDropActivity extends AppCompatActivity {
                                     break;
                                 case DragEvent.ACTION_DRAG_EXITED:
                                     if (yLocation < 50) {
-                                        scroll(-40,2);
+                                        scroll(-40, 2);
                                     }
                                     if (yLocation > 950) {
-                                        scroll(40,2);
+                                        scroll(40, 2);
                                     }
                                     Log.d(TAG, "exited");
                                     break;
@@ -159,9 +159,9 @@ public class DragDropActivity extends AppCompatActivity {
                                             BasisGrid pickPlace = basisGrids.get(dragPosition);
                                             pickPlace.setTextComment("Image number" + " " + String.valueOf(position + 1));
                                             basisGrids.remove(position);
-                                            basisGrids.add(position,pickPlace);
+                                            basisGrids.add(position, pickPlace);
                                             basisGrids.remove(dragPosition);
-                                            basisGrids.add(dragPosition,pickImage);
+                                            basisGrids.add(dragPosition, pickImage);
                                             gridAdapter.notifyDataSetChanged();
 
                                         }
@@ -205,7 +205,7 @@ public class DragDropActivity extends AppCompatActivity {
             }
         };
         timer = new Timer();
-        timer.scheduleAtFixedRate(startScroll, 0,250 );
+        timer.scheduleAtFixedRate(startScroll, 0, 250);
     }
 
 
